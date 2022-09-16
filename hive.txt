@@ -1,4 +1,4 @@
-create table sales_order_data_csv_v1
+create table sales_order_data_csv
 (
 ORDERNUMBER int,
 QUANTITYORDERED int,
@@ -28,3 +28,31 @@ tblproperties("skip.header.line.count"="1")
 ; 
 
 # load sales_order_data.csv data into above mentioned tables
+
+> create table sales_order_data_orc_01
+    > (
+    > ORDERNUMBER int,
+    > QUANTITYORDERED int,
+    > PRICEEACH float,
+    > ORDERLINE int,
+    > SALES float,
+    > STATUS string,
+    > QTR_ID int,
+    > MONTH_ID int,
+    > YEAR_ID int,
+    > PRODUCTLINE string,
+    > MSRP int,
+    > PRODUCTCODE string,
+    > PHONE string,
+    > CITY string,
+    > STATE string,
+    > POSTALCODE string,
+    > COUNTRY string,
+    > TERRITORY string,
+    > CONTACTLASTNAME string,
+    > CONTACTFIRSTNAME string,
+    > DEALSIZE string
+    > )
+    > stored as orc;
+    
+     # copy data from sales_order_data_csv to sales_order_data_orc_01
