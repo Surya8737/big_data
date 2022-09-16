@@ -56,3 +56,6 @@ tblproperties("skip.header.line.count"="1")
     > stored as orc;
     
      # copy data from sales_order_data_csv to sales_order_data_orc_01
+     
+     > from sales_order_data_csv insert overwrite table sales_order_data_orc_01 select*;
+     
