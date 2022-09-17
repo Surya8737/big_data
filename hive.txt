@@ -74,6 +74,7 @@ tblproperties("skip.header.line.count"="1")
 2005    1791486.7086791992
 
 #Find a product for which maximum orders were placed
+>select productline, max(quantityordered) from sales_order_data_orc_01 group by productline;
 
 Classic Cars    97
 Motorcycles     66
