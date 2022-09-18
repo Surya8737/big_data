@@ -91,5 +91,36 @@ Vintage Cars    76
 9       584724.26953125
 12      634679.1182250977
 
+# In which quarter sales was minimum
+> select month_id, min(sales) from sales_order_data_orc_01 where month_id in (3,6,9,12) group by month_id;
+3       710.2
+6       651.8
+9       948.99
+12      728.4
+# In which country sales was maximum and in which country sales was minimum
+> select country, max(sales) ,min(sales) from  sales_order_data_orc_01 group by country;
+
+Australia       9774.03 652.35
+Austria 9240.0  640.05
+Belgium 6804.63 881.4
+Canada  9064.89 1119.93
+Denmark 10468.9 1146.5
+Finland 10606.2 891.03
+France  11739.7 482.13
+Germany 8940.96 948.99
+Ireland 8258.0  1056.4
+Italy   9160.36 577.6
+Japan   10758.0 553.95
+Norway  8844.12 1129.04
+Philippines     7483.98 1173.15
+Singapore       10993.5 785.64
+Spain   12001.0 683.8
+Sweden  7209.11 1467.48
+Switzerland     6761.6  1205.04
+UK      11886.6 710.2
+USA     14082.8 541.14
+
+
+
      
      
