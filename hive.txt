@@ -84,6 +84,12 @@ Trains  51
 Trucks and Buses        70
 Vintage Cars    76
 
+# Calculate the total sales for each quarter
+ > select month_id, sum(sales) from sales_order_data_orc_01 where month_id in(3,6,9,12) group by month_id;
+ 3       754501.3897094727
+6       454756.78186035156
+9       584724.26953125
+12      634679.1182250977
 
      
      
