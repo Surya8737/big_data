@@ -1,4 +1,4 @@
-
+download sales_order_data sheet linl>>>>https://github.com/Surya8737/big_data/blob/main/sales_order_data.csv
 create table sales_order_data_csv
 
 (
