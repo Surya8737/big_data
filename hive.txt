@@ -120,6 +120,20 @@ Switzerland     6761.6  1205.04
 UK      11886.6 710.2
 USA     14082.8 541.14
 
+#Calculate quartelry sales for each city
+ >select month_id,city,sales from  sales_order_data_orc_01 where month_id in (3,6,9,12) limit 10;
+
+12      San Francisco   2168.54
+6       Bridgewater     3676.76
+9       Helsinki        2597.39
+12      Chatswood       1451.0
+3       New Bedford     3207.12
+3       Lule    7209.11
+9       Singapore       10993.5
+12      Vancouver       9064.89
+3       Cambridge       6463.23
+6       Minato-ku       7680.64
+
 
 
      
